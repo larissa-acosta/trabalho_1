@@ -73,14 +73,19 @@ CREATE DATABASE crud;
 ```sql
 CREATE TABLE `usuarios` (
   `idusuarios` int NOT NULL AUTO_INCREMENT,
-  `nome` varchar(45) DEFAULT NULL,
-  `idade` int DEFAULT NULL,
-  `cpf` varchar(45) DEFAULT NULL,
-  `email` varchar(255) DEFAULT NULL,
-  `telefone` varchar(20) DEFAULT NULL,
-  `genero` varchar(20) DEFAULT NULL,
-  PRIMARY KEY (`idusuarios`)
-)
+  `nome` varchar(100) NOT NULL,
+  `idade` int NOT NULL,
+  `cpf` char(14) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `telefone` char(15) NOT NULL,
+  `genero` varchar(20) NOT NULL,
+  PRIMARY KEY (`idusuarios`),
+  CONSTRAINT `usuarios_chk_1` CHECK (regexp_like(`nome`,_utf8mb4'^[A-Za-zÀ-ÖØ-ÿ\\s-]+$')),
+  CONSTRAINT `usuarios_chk_2` CHECK (((`idade` >= 0) and (`idade` <= 120))),
+  CONSTRAINT `usuarios_chk_3` CHECK (regexp_like(`cpf`,_utf8mb4'^\\d{3}\\.\\d{3}\\.\\d{3}-\\d{2}$')),
+  CONSTRAINT `usuarios_chk_4` CHECK (regexp_like(`email`,_utf8mb4'^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$')),
+  CONSTRAINT `usuarios_chk_5` CHECK (regexp_like(`telefone`,_utf8mb4'^\\(\\d{2}\\) \\d{5}-\\d{4}$'))
+) 
 ```
 
 ---

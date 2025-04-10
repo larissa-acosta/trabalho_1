@@ -44,7 +44,7 @@ Este projeto é uma aplicação **CRUD (Create, Read, Update, Delete)** para ger
 
 Confira uma demonstração completa do projeto no YouTube:
 
-📺 [Assista no YouTube](https://www.youtube.com/)
+📺 [Assista no YouTube](https://youtu.be/k4_7b6CXwU8)
 
 ---
 ## ⚙️ Como Rodar o Projeto

@@ -9,7 +9,7 @@ function Header() {
         <Box sx={{ flexGrow: 1 }}>
           <Typography variant="h6" sx={{ color: 'white' }}>
             <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
-              Listagem de Usuários
+              Gerenciamento de Usuários
             </Link>
           </Typography>
           <Typography variant="body2" sx={{ color: 'rgba(255, 255, 255, 0.7)' }}>

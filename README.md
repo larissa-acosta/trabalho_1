@@ -54,7 +54,7 @@ Confira uma demonstração completa do projeto no YouTube:
 Certifique-se de ter instalado:
 
 - Node.js (versão 14 ou superior)
-- npm (geralmente vem com o Node.js)
+- npm 
 - MySQL
 
 ---
@@ -100,7 +100,6 @@ npm install
 Altere o arquivo `db.js` se necessário:
 
 ```js
-// db.js
 export const db = mysql.createConnection({
     host: "localhost",
     user: "root",

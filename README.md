@@ -35,11 +35,18 @@ Este projeto é uma aplicação **CRUD (Create, Read, Update, Delete)** para ger
 │   │   ├── App.js          # Componente principal da aplicação
 │   │   └── index.js        # Ponto de entrada da aplicação
 │
-└──  package.json            # Dependências do projeto
+├── package.json            # Dependências do projeto
+└── README.md               # Este arquivo
 ```
 
 ---
+## ▶️ Demonstração em Vídeo
 
+Confira uma demonstração completa do projeto no YouTube:
+
+📺 [Assista no YouTube](https://www.youtube.com/)
+
+---
 ## ⚙️ Como Rodar o Projeto
 
 ### ✅ Pré-requisitos
